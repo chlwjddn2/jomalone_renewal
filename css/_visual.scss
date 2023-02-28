@@ -1,0 +1,35 @@
+/*main_visual*/
+@mixin response{
+	@media all and  (max-width:1024px) {
+            .main_text_box{
+                top: 70%;
+            }    
+	} 
+}
+
+.main_visual{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    margin-top: 70px;
+    .main_text_box{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        h2{
+            @include main_text();
+            
+        }
+        a{
+            @include main_link();
+            transition: .3s ease-in-out;
+            &:hover{
+                background: $color-white;
+                color: $color-black;
+            }
+        }
+    }
+
+    @include response();
+}

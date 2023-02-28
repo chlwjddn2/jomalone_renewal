@@ -1,0 +1,20 @@
+@mixin response{
+	@media all and  (max-width:1024px) {
+        padding: 80px 20px;
+	} 
+}
+
+.gift{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    h2{
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    .gift_text_box{
+         @include product_text();
+    }
+
+    @include response();
+}

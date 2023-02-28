@@ -1,0 +1,102 @@
+@mixin response{
+    @media all and (max-width:1024px) {
+         .footer_top{
+            ul{
+                flex-direction: column;
+                > li{
+                    padding: 20px 0;
+                    > ul{
+                        display: none;
+                    }
+                }
+            }
+         }
+         .footer_logo{
+            top: 100%;
+            left: 0;
+            a{
+                width: 200px;
+                height: 70px;
+            }
+         }
+    } 
+}
+
+#footer{
+    width: 100%;
+    background-color: $color-white;
+    padding: 80px 40px;
+
+    .footer_top{
+        padding-bottom: 40px;
+        border-bottom: 1px solid $color-gray;
+        > ul{
+            display: flex;
+                > li{
+                    padding-right: 60px;
+                    font-size: 1rem;
+
+                    > ul{
+                        margin-top: 20px;
+                        > li{
+                            padding-bottom: 20px;
+                            
+                            a{
+                                color: $color-black;
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+
+    .footer_lower{
+        padding-top: 40px;  
+        position: relative;
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+                padding-bottom: 20px;
+                font-size: 0.9rem;
+            }
+        } 
+    }
+
+    .footer_logo{
+        position: absolute;
+        bottom: 0;
+        right: 60px;
+        a{
+            background: url('../images/logo.png') no-repeat center;
+            background-size: contain;
+            width: 10vw;
+            height: 8vw;
+        }
+    }
+
+    @include response();
+}
+
+.gotop{
+    position: fixed;
+    top: 70%;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: $color-black;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    display: none;
+
+    z-index: 99;
+    i{
+        color: $color-white;
+        font-size: 1rem;
+    }
+}
+.gotop.show{
+    display: block;
+}

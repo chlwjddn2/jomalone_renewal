@@ -1,0 +1,120 @@
+
+/*header*/
+@import 'var';
+@mixin response{
+	@media all and (min-width:768px) and (max-width:1024px) {
+		padding: 0 20px;
+		.logo{
+			> a{
+				width: 15vw;
+				height: 70px;
+			}
+		}
+		.nav{
+			display: none;
+		}
+		.util{
+			display: none;
+		}
+		.menu_open{
+			display: block;
+		}
+
+	  } 
+	@media all and (min-width:480px) and (max-width:767px) { 
+		padding: 0 20px;
+		.logo{
+			> a{
+				width: 25vw;
+				height: 70px;
+			}
+		}
+		.nav{
+			display: none;
+		}
+		.util{
+			display: none;
+		}
+		.menu_open{
+			display: block;
+		}
+	} 	
+	@media all and (max-width:479px) {
+		padding: 0 20px;
+		.logo{
+			> a{
+				width: 30vw;
+				height: 70px;
+			}
+		}
+		.nav{
+			display: none;
+		}
+		.util{
+			display: none;
+		}
+		.menu_open{
+			display: block;
+		}
+	}
+}
+#header{
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background: $body-color;
+	.logo{
+		background: url('../images/logo.png') no-repeat center;
+		background-size: contain;
+		margin-right: 40px;
+		>a{
+			text-indent: -9999px;
+			width: 7vw;
+			height: 70px;
+		}
+	}
+
+	.nav{
+		width: 100%;
+		ul{
+			display: flex;
+
+			li{
+				padding: 0 20px;
+
+				a{
+					font-size: 0.8rem;
+					color: $color-black;
+				}
+			}
+		}
+	}
+
+	.util{
+		display: flex;
+		&_btn{
+			padding: 0 10px;
+			
+			button{
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	.menu_open{
+		display: none;
+		&_btn{
+			i{
+				font-size: 2rem;
+			}
+		}
+	}
+
+	@include response();
+}

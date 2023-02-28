@@ -1,0 +1,10 @@
+@mixin response{
+	@media all and  (max-width:1024px) {
+        padding: 80px 20px;
+	} 
+}
+
+.recommend{
+   @include product();
+   @include response();
+}
