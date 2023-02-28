@@ -109,6 +109,7 @@ img {
 }
 #header .nav ul li a {
   font-size: 0.8rem;
+  color: #1c1c1c;
 }
 #header .util {
   display: flex;
