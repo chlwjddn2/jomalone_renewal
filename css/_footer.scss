@@ -35,7 +35,9 @@
                 > li{
                     padding-right: 60px;
                     font-size: 1rem;
-
+                    a{
+                        color: $color-black;
+                    }
                     > ul{
                         margin-top: 20px;
                         > li{

@@ -1,4 +1,5 @@
 /*reset css*/
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -33,6 +34,7 @@ body {
   font-size: 20px;
   overflow-x: hidden;
   background: #fcf9ee;
+  font-family: "Gothic A1", sans-serif;
 }
 @media all and (max-width: 479px) {
   body {
@@ -364,6 +366,11 @@ img {
   padding: 8px 24px;
   margin-top: 10px;
   border: 1px solid #000;
+  transition: 0.2s ease-in-out;
+}
+.product .best_text_box a:hover {
+  background-color: #1c1c1c;
+  color: #fff;
 }
 @media all and (max-width: 1024px) {
   .product {
@@ -396,6 +403,11 @@ img {
   color: #1c1c1c;
   padding: 8px 24px;
   border: 1px solid #000;
+  transition: 0.2s ease-in-out;
+}
+.new_inner_text a:hover {
+  background-color: #1c1c1c;
+  color: #fff;
 }
 @media all and (max-width: 1024px) {
   .new {
@@ -428,6 +440,11 @@ img {
   color: #1c1c1c;
   padding: 8px 24px;
   border: 1px solid #000;
+  transition: 0.2s ease-in-out;
+}
+.recommend_inner_text a:hover {
+  background-color: #1c1c1c;
+  color: #fff;
 }
 @media all and (max-width: 1024px) {
   .recommend {
@@ -460,6 +477,11 @@ img {
   color: #1c1c1c;
   padding: 8px 24px;
   border: 1px solid #000;
+  transition: 0.2s ease-in-out;
+}
+.story_inner_text a:hover {
+  background-color: #1c1c1c;
+  color: #fff;
 }
 @media all and (max-width: 1024px) {
   .story {
@@ -487,6 +509,11 @@ img {
   padding: 8px 24px;
   margin-top: 10px;
   border: 1px solid #000;
+  transition: 0.2s ease-in-out;
+}
+.gift .gift_text_box a:hover {
+  background-color: #1c1c1c;
+  color: #fff;
 }
 @media all and (max-width: 1024px) {
   .gift {
@@ -519,6 +546,11 @@ img {
   color: #1c1c1c;
   padding: 8px 24px;
   border: 1px solid #000;
+  transition: 0.2s ease-in-out;
+}
+.diffuser_inner_text a:hover {
+  background-color: #1c1c1c;
+  color: #fff;
 }
 @media all and (max-width: 1024px) {
   .diffuser {
@@ -580,6 +612,9 @@ img {
 #footer .footer_top > ul > li {
   padding-right: 60px;
   font-size: 1rem;
+}
+#footer .footer_top > ul > li a {
+  color: #1c1c1c;
 }
 #footer .footer_top > ul > li > ul {
   margin-top: 20px;

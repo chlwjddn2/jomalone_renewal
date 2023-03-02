@@ -27,6 +27,8 @@ $color-gray : #ccc;
         padding: 8px 24px;
         margin-top: 10px;
         border: 1px solid #000;
+        transition: .2s ease-in-out;
+        @include hover();
     }
 }
 
@@ -54,6 +56,8 @@ $color-gray : #ccc;
                 color: $color-black;
                 padding: 8px 24px;
                 border: 1px solid #000;
+                transition: .2s ease-in-out;
+                @include hover();
             }
         }
     }
@@ -83,6 +87,8 @@ $color-gray : #ccc;
                 color: $color-black;
                 padding: 8px 24px;
                 border: 1px solid #000;
+                transition: .2s ease-in-out;
+                @include hover();
             }
         }
     }
@@ -92,4 +98,11 @@ $color-gray : #ccc;
     @media all and (min-width:768px) and (max-width:1023px) { 
         
       } 
+}
+
+@mixin hover{
+    &:hover{
+        background-color: $color-black;
+        color: $color-white;
+    }
 }

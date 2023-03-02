@@ -38,6 +38,7 @@ body {
 	font-size: 20px;
 	overflow-x: hidden;
 	background: $body-color;
+	font-family: 'Gothic A1', sans-serif;
 	@include response();
 }
 ol, ul {
